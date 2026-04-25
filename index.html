@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rusk Law | Nevada Corporate Counsel</title>
+  <meta name="description" content="Rusk Law provides Nevada corporate legal services for governance, contracts, transactional risk, and business-focused legal support." />
+  <style>
+    :root {
+      --bg: #070707; --maroon: #7a1428; --line: rgba(255,255,255,.10);
+      --text: #f5f5f4; --muted: #a8a29e; --accent: #c25b70;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+    .hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(circle at 20% 20%, rgba(128,0,32,.42), transparent 34%),
+                  radial-gradient(circle at 85% 10%, rgba(95,18,30,.28), transparent 30%);
+    }
+    .wrap { position: relative; width: min(1120px, calc(100% - 36px)); margin: 0 auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 28px 0; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .mark {
+      width: 44px; height: 44px; display: grid; place-items: center; border-radius: 16px;
+      background: #570d1b; border: 1px solid rgba(255,255,255,.16); box-shadow: 0 15px 35px rgba(0,0,0,.35);
+      font-weight: 800; font-size: 22px; font-family: Georgia, serif;
+    }
+    .brand strong { display: block; font-size: 16px; letter-spacing: .18em; }
+    .brand span {
+      display: block; color: var(--accent); font-size: 11px; margin-top: 2px;
+      letter-spacing: .14em; text-transform: uppercase;
+    }
+    .navlinks { display: flex; align-items: center; gap: 26px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+    .navbtn { border-radius: 999px; padding: 11px 18px; background: var(--maroon); color: white; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 50px; align-items: center; padding: 76px 0 105px; }
+    .eyebrow { display: inline-flex; color: var(--accent); font-size: 13px; text-transform: uppercase; letter-spacing: .18em; font-weight: 800; margin-bottom: 20px; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(44px, 7vw, 76px); line-height: .98; letter-spacing: -.045em; margin: 0; max-width: 820px; }
+    h1 span { color: #c2495d; }
+    h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(34px, 4.5vw, 52px); line-height: 1.04; letter-spacing: -.035em; }
+    h3 { margin: 0; font-size: 20px; }
+    p { margin: 0; }
+    .lead { margin-top: 26px; max-width: 680px; color: #d6d3d1; font-size: 18px; line-height: 1.75; }
+    .rule { width: 70px; height: 3px; background: #c2495d; margin: 24px 0; }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 34px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; border-radius: 4px; padding: 15px 26px; font-weight: 800; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+    .primary { background: var(--maroon); color: white; box-shadow: 0 18px 40px rgba(59,8,19,.32); }
+    .secondary { border: 1px solid rgba(255,255,255,.38); color: #e7e5e4; }
+    .credential-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 46px; padding-top: 26px; border-top: 1px solid var(--line); }
+    .credential { display: flex; align-items: center; gap: 12px; color: #d6d3d1; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    .credential .symbol { color: #c2495d; font-size: 26px; }
+    .photo-shell { position: relative; width: min(100%, 510px); margin: 0 auto; }
+    .photo-card { position: relative; overflow: hidden; border-radius: 12px; border: 1px solid rgba(194,73,93,.55); background: rgba(255,255,255,.045); box-shadow: 0 32px 80px rgba(0,0,0,.52); }
+    .photo-card img { width: 100%; height: 620px; display: block; object-fit: cover; object-position: center 34%; filter: saturate(.90) contrast(1.05) brightness(.92); }
+    .photo-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,7,7,.00), rgba(7,7,7,.10) 62%, rgba(7,7,7,.42)); }
+    section.content { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 72px 0; }
+    .center { text-align: center; }
+    .section-label { color: var(--accent); text-transform: uppercase; letter-spacing: .18em; font-size: 13px; font-weight: 800; margin-bottom: 12px; }
+    .muted { color: var(--muted); margin-top: 18px; max-width: 760px; }
+    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 38px; }
+    .service { border: 1px solid var(--line); border-radius: 6px; background: linear-gradient(135deg, rgba(255,255,255,.055), rgba(255,255,255,.025)); padding: 26px; display: grid; grid-template-columns: 54px 1fr; gap: 18px; min-height: 155px; }
+    .service .icon { width: 50px; height: 50px; display: grid; place-items: center; border-radius: 50%; background: rgba(122,20,40,.85); color: #fff; font-size: 22px; }
+    .service p { margin-top: 8px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .band { border-top: 1px solid rgba(122,20,40,.6); border-bottom: 1px solid rgba(122,20,40,.6); background: linear-gradient(90deg, rgba(122,20,40,.18), rgba(0,0,0,.35)), #0d0d0d; }
+    .about { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: start; }
+    .pillars { display: grid; gap: 24px; border-left: 1px solid var(--line); padding-left: 52px; }
+    .pillar { display: grid; grid-template-columns: 54px 1fr; gap: 18px; }
+    .pillar .symbol { color: #c2495d; font-size: 34px; line-height: 1; }
+    .pillar p { color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .contact-wrap { border-top: 1px solid var(--line); background: #050505; }
+    .contact { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 72px 0; display: grid; grid-template-columns: .85fr 1.15fr; gap: 48px; }
+    .contact-list { display: grid; gap: 14px; color: #d6d3d1; font-size: 15px; margin-top: 28px; }
+    form { border: 1px solid var(--line); border-radius: 6px; background: rgba(255,255,255,.035); padding: 30px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    label { display: block; color: #d6d3d1; font-size: 14px; }
+    input, textarea { width: 100%; margin-top: 7px; border: 1px solid var(--line); border-radius: 3px; background: rgba(0,0,0,.35); color: white; padding: 13px 14px; font: inherit; outline: none; }
+    textarea { min-height: 140px; resize: vertical; }
+    .full { margin-top: 14px; }
+    .form-note { color: #78716c; font-size: 12px; line-height: 1.65; margin-top: 18px; }
+    footer { border-top: 1px solid var(--line); padding: 28px 18px; text-align: center; color: #78716c; font-size: 12px; }
+    @media (max-width: 900px) {
+      .navlinks a:not(.navbtn) { display: none; }
+      .hero-grid, .about, .contact { grid-template-columns: 1fr; }
+      .hero-grid { padding: 54px 0 76px; }
+      .services { grid-template-columns: 1fr; }
+      .credential-row { grid-template-columns: 1fr; }
+      .pillars { border-left: 0; padding-left: 0; }
+      .form-grid { grid-template-columns: 1fr; }
+      section.content, .contact { padding: 58px 0; }
+      h1 { font-size: 48px; }
+      .photo-card img { height: 560px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="#"><div class="mark">R</div><div><strong>RUSK LAW</strong><span>Corporate Law Counsel</span></div></a>
+        <div class="navlinks">
+          <a href="#services">Services</a><a href="#about">About</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+          <a class="navbtn" href="#contact">Schedule a Consultation</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Nevada Corporate Lawyer</div>
+          <h1>Strategic Counsel.<br><span>Business-Driven Solutions.</span></h1>
+          <div class="rule"></div>
+          <p class="lead">I partner with businesses, executives, and boards to navigate complex corporate matters, mitigate risk, and build strong legal foundations for sustainable growth.</p>
+          <div class="actions">
+            <a class="button primary" href="#services">View Services →</a>
+            <a class="button secondary" href="#contact">Schedule a Consultation</a>
+          </div>
+          <div class="credential-row">
+            <div class="credential"><span class="symbol">⚖</span><span>Nevada Bar<br>Admitted</span></div>
+            <div class="credential"><span class="symbol">⬟</span><span>Corporate &<br>Transactional</span></div>
+            <div class="credential"><span class="symbol">🤝</span><span>Business-Focused<br>Legal Partner</span></div>
+          </div>
+        </div>
+        <aside class="photo-shell"><div class="photo-card"><img src="portrait.jpg" alt="Rusk Law Nevada corporate lawyer portrait" /></div></aside>
+      </div>
+    </div>
+  </header>
+
+  <section id="services" class="content">
+    <div class="center"><p class="section-label">Practice Areas</p><h2>How I Can Help</h2></div>
+    <div class="services">
+      <article class="service"><div class="icon">🏛</div><div><h3>Corporate Governance</h3><p>Counsel on corporate structure, bylaws, policies, board approvals, shareholder matters, and governance best practices tailored to your business.</p></div></article>
+      <article class="service"><div class="icon">📄</div><div><h3>Contracts & Commercial Agreements</h3><p>Drafting, negotiating, and reviewing agreements that protect your interests and support your objectives.</p></div></article>
+      <article class="service"><div class="icon">👥</div><div><h3>Board & Shareholder Matters</h3><p>Guidance on fiduciary duties, board operations, shareholder rights, and resolving internal disputes.</p></div></article>
+      <article class="service"><div class="icon">💼</div><div><h3>Outside General Counsel</h3><p>Practical, business-minded legal support for day-to-day operations and long-term strategic decisions.</p></div></article>
+      <article class="service"><div class="icon">▣</div><div><h3>Nevada Local Counsel</h3><p>Reliable local counsel for out-of-state attorneys and businesses with matters in Nevada.</p></div></article>
+      <article class="service"><div class="icon">🛡</div><div><h3>Transactional Support</h3><p>Due diligence, entity transactions, risk management, and support for strategic commercial deals.</p></div></article>
+    </div>
+  </section>
+
+  <div id="about" class="band">
+    <section class="content about">
+      <div>
+        <p class="section-label">About</p>
+        <h2>Experience. Judgment. Results.</h2>
+        <p class="muted">I provide practical legal counsel to businesses and executives facing complex corporate decisions. My work combines corporate-law discipline with a business-first approach.</p>
+        <p class="muted">The goal is simple: protect what you have built, document decisions cleanly, and help you move forward with confidence.</p>
+      </div>
+      <div id="approach" class="pillars">
+        <div class="pillar"><div class="symbol">▣</div><div><h3>Business-Minded</h3><p>I focus on legal solutions that support the commercial objective, not theoretical advice detached from execution.</p></div></div>
+        <div class="pillar"><div class="symbol">◎</div><div><h3>Responsive & Reliable</h3><p>Clear communication and practical next steps when timing, risk, and decision-making matter.</p></div></div>
+        <div class="pillar"><div class="symbol">🤝</div><div><h3>Trusted Advisor</h3><p>Long-term relationships built on discretion, clear documentation, and sound judgment.</p></div></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="contact" class="contact-wrap">
+    <section class="contact">
+      <div>
+        <p class="section-label">Get In Touch</p>
+        <h2>Let’s Discuss Your Needs</h2>
+        <p class="muted">Tell me about your matter and how I can help. Do not send confidential information until a conflict check is complete and an engagement letter is signed.</p>
+        <div class="contact-list">
+          <p>✉ YOUR_EMAIL@example.com</p>
+          <p>☎ 775-351-6830</p>
+          <p>⌖ Las Vegas, Nevada</p>
+        </div>
+      </div>
+      <form onsubmit="event.preventDefault(); prepareEmail();">
+        <div class="form-grid">
+          <label>Full Name<input id="name" placeholder="Full Name" /></label>
+          <label>Email Address<input id="email" placeholder="Email Address" /></label>
+        </div>
+        <div class="form-grid full">
+          <label>Company<input id="company" placeholder="Company (Optional)" /></label>
+          <label>Phone<input id="phone" placeholder="Phone Number" /></label>
+        </div>
+        <label class="full">Matter Summary<textarea id="message" placeholder="Tell me about your legal needs..."></textarea></label>
+        <button class="button primary" style="width:100%; margin-top:20px; cursor:pointer;" type="submit">Send Message →</button>
+        <p class="form-note">Attorney Advertising. This website is for informational purposes only and does not constitute legal advice. Submitting an inquiry does not create an attorney-client relationship. Representation begins only after conflicts clearance and a signed engagement agreement.</p>
+      </form>
+    </section>
+  </div>
+
+  <footer>© 2026 Rusk Law. All rights reserved. Nevada-admitted attorney. Prior results do not guarantee a similar outcome.</footer>
+
+  <script>
+    function prepareEmail() {
+      const name = document.getElementById('name').value || 'Prospective Client';
+      const email = document.getElementById('email').value || '';
+      const phone = document.getElementById('phone').value || '';
+      const company = document.getElementById('company').value || '';
+      const message = document.getElementById('message').value || '';
+      const subject = encodeURIComponent('Legal Services Inquiry from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\nCompany: ' + company + '\n\nMessage:\n' + message + '\n\nNote: I understand that submitting this inquiry does not create an attorney-client relationship.');
+      window.location.href = 'mailto:YOUR_EMAIL@example.com?subject=' + subject + '&body=' + body;
+    }
+  </script>
+</body>
+</html>
